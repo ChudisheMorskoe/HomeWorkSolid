@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Contracts\\ApiServiceInterface' => $baseDir . '/app/Contracts/ApiServiceInterface.php',
+    'App\\Contracts\\DataProcessorInterface' => $baseDir . '/app/Contracts/DataProcessorInterface.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeWorkSolidController' => $baseDir . '/app/Http/Controllers/HomeWorkSolidController.php',
@@ -26,6 +28,8 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+    'App\\Services\\DataProcessor' => $baseDir . '/app/Services/DataProcessor.php',
+    'App\\Services\\OpenStreetMapService' => $baseDir . '/app/Services/OpenStreetMapService.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
     'Brick\\Math\\BigInteger' => $vendorDir . '/brick/math/src/BigInteger.php',

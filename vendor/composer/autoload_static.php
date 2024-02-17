@@ -530,6 +530,8 @@ class ComposerStaticInit5fe1cc3b60b2a817929c58558ca5b1c4
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Contracts\\ApiServiceInterface' => __DIR__ . '/../..' . '/app/Contracts/ApiServiceInterface.php',
+        'App\\Contracts\\DataProcessorInterface' => __DIR__ . '/../..' . '/app/Contracts/DataProcessorInterface.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeWorkSolidController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeWorkSolidController.php',
@@ -549,6 +551,8 @@ class ComposerStaticInit5fe1cc3b60b2a817929c58558ca5b1c4
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\DataProcessor' => __DIR__ . '/../..' . '/app/Services/DataProcessor.php',
+        'App\\Services\\OpenStreetMapService' => __DIR__ . '/../..' . '/app/Services/OpenStreetMapService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeWorkSolidController;
+use App\Services\DataProcessor;
+use App\Services\OpenStreetMapService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/homeWorkSolid', [HomeWorkSolidController::class, 'index']);
+Route::get('/homeWorkSolid', function () {
+    $apiService = new OpenStreetMapService();
+    $dataProcessor = new DataProcessor();
+
+    $controller = new HomeWorkSolidController($apiService, $dataProcessor);
+
+    return $controller->index(request());
+});
